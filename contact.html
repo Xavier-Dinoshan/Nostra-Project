@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWSOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h1>Nostra</h1>
+    
+        <p class="menuicon"><i id="menuicon" class="fa-solid fa-bars"></i></p>
+    
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New Arrival</a></li>
+            <li><a href="index.html">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    
+    </div>
+    
+    <!-- SIDE NAVBAR -->
+    <section id="side-navbar" class="side-navbar">
+        <p id="closenav" style="text-align: right; cursor: pointer; padding-bottom: 15px;">X</p>
+        <ul class="side-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">New Arrival</a></li>
+            <li><a href="index.html">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2 style="margin-bottom: 1vw;">Contact Us</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" class="email" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" required></textarea>
+
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <!-- NEWS LETTER SECTION -->
+    <div class="news-letter">
+        <h2>Join our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text">
+        <button>Subcribe <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <h1>Nostra</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    
+        <div class="icon-container">
+            <i class="icon fa-brands fa-instagram"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-facebook"></i>
+        </div>
+    
+        <p>&#64; 2023 Nostra.com</p>
+    </div>
+
+
+<script>
+    // side navbar
+        var menuicon = document.getElementById("menuicon")
+        var side_navbar = document.getElementById("side-navbar")
+        var closenav = document.getElementById("closenav")
+
+        menuicon.addEventListener("click", function () {
+            side_navbar.style.left = 0
+        })
+
+        closenav.addEventListener("click", function () {
+            side_navbar.style.left = "-65%"
+        })
+</script>
+</body>
+</html>
